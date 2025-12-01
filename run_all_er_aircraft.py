@@ -38,7 +38,10 @@ datasets = """aircraft_er/baseline
 aircraft_er/baseline_1
 aircraft_er/baseline_2""".split('\n')
 
-lms = ['distilbert', 'distilbert', 'distilbert']
+datasets = """aircraft_er/cictt_registry
+aircraft_er/union""".split('\n')
+
+lms = ['distilbert', 'distilbert']
 
 
 
@@ -77,7 +80,7 @@ for dataset, lm in zip(datasets, lms):
     --run_id %s \
     --save_model""" % (dataset, batch_size, max_len, lm, epochs, run_id)
     print(cmd)
-    #os.system(cmd)
+    os.system(cmd)
 
 
     #string variables for matcher.py

@@ -62,6 +62,24 @@
     "validset": "data/aircraft_er/baseline_2/test.txt",
     "testset": "data/aircraft_er/baseline_2/valid.txt"
   },
+
+  {
+    "name": "aircraft_er/cictt_registry",
+    "task_type": "classification",
+    "vocab": ["0", "1"],
+    "trainset": "data/aircraft_er/cictt_registry/train.txt",
+    "validset": "data/aircraft_er/cictt_registry/test.txt",
+    "testset": "data/aircraft_er/cictt_registry/valid.txt"
+  },
+    {
+    "name": "aircraft_er/union",
+    "task_type": "classification",
+    "vocab": ["0", "1"],
+    "trainset": "data/aircraft_er/union/train.txt",
+    "validset": "data/aircraft_er/union/test.txt",
+    "testset": "data/aircraft_er/union/valid.txt"
+  },
+
   
   {
     "name": "aircraft_er/baseline",
